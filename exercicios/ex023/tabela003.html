@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <STyle>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        col.coluna1{
+            background-color: aqua;
+        }
+    </STyle>
+</head>
+<body>
+    <h1>Mesclagem de Celulas</h1>
+    <table>
+
+        <colgroup>
+            <col class="coluna1">
+        </colgroup>
+
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!--colspan="" oculpa linha-->
+            
+        </tr>
+        <tr>
+            <td rowspan="3">D</td> <!--rowspan="" oculpa coluna-->
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+             
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+             
+            
+            <td colspan="2">M</td>
+        </tr>
+    </table>
+</body>
+</html>
